@@ -1,9 +1,9 @@
 angular.module('zamowienia', ['ngRoute'])
-	.config(function ($routeProvider, $locationProvider) {
+	.config(function($routeProvider, $locationProvider) {
 		$routeProvider
 		.when('/zamowienia',{
 			controller: 'ListController',
-			tempateUrl: 'vievs/list.html'
+			templateUrl: 'views/list.html'
 			});
-		$locationProvider.html5mode(true);
+		$locationProvider.html5Mode(true);
 	});
